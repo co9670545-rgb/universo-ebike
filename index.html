@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Universo E-Bike | Peças para Bicicletas Elétricas</title>
+<title>Universo E-Bike | Peças e Acessórios para E-Bikes</title>
 
 <style>
 
@@ -17,51 +17,74 @@ box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#050505;
 color:white;
 }
 
+
+/* MENU */
+
 header{
-background:#0d0d0d;
+
+background:#0c0c0c;
 padding:20px 40px;
 display:flex;
 align-items:center;
 justify-content:space-between;
 position:sticky;
 top:0;
-z-index:10;
+z-index:20;
+
 }
 
 .logo{
+
 width:90px;
+
 }
 
+
 nav a{
+
 color:white;
 text-decoration:none;
 margin-left:20px;
+font-weight:bold;
+
 }
+
 
 nav a:hover{
+
 color:#32c85a;
+
 }
 
+
+
+/* HERO */
 
 .hero{
 
-min-height:600px;
+min-height:650px;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
-padding:30px;
+padding:40px;
 
 background:
+
 linear-gradient(
-rgba(0,0,0,.75),
-rgba(0,0,0,.9)
+rgba(0,0,0,.7),
+rgba(0,0,0,.95)
 ),
+
 url("banner.jpg");
 
 background-size:cover;
@@ -86,22 +109,24 @@ color:#32c85a;
 
 .hero p{
 
-font-size:20px;
-margin:20px;
+font-size:22px;
+margin:25px;
 
 }
 
 
+
 .botao{
 
+display:inline-block;
 background:#32c85a;
-color:black;
+color:#000;
 padding:15px 30px;
 border-radius:30px;
-text-decoration:none;
 font-weight:bold;
-display:inline-block;
+text-decoration:none;
 margin:8px;
+cursor:pointer;
 
 }
 
@@ -113,14 +138,20 @@ transform:scale(1.05);
 }
 
 
+
+/* TITULOS */
+
 .titulo{
 
 text-align:center;
-font-size:35px;
-margin:50px 0 30px;
+font-size:36px;
+margin:60px 0 35px;
 
 }
 
+
+
+/* PRODUTOS */
 
 .produtos{
 
@@ -133,12 +164,14 @@ padding:30px;
 }
 
 
+
 .card{
 
 background:#111;
 width:330px;
 padding:20px;
-border-radius:20px;
+border-radius:22px;
+text-align:center;
 
 }
 
@@ -154,37 +187,113 @@ border-radius:15px;
 }
 
 
+
 .card h3{
 
 color:#32c85a;
-margin:15px 0;
+margin:20px 0 10px;
 
 }
+
 
 
 .preco{
 
 font-size:24px;
 font-weight:bold;
-margin:15px 0;
+margin:15px;
 
 }
 
 
-.detalhes{
+
+/* BENEFÍCIOS */
+
+.beneficios{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:30px;
+
+}
+
+
+.beneficio{
+
+background:#111;
+padding:25px;
+border-radius:20px;
+width:250px;
+text-align:center;
+
+}
+
+
+
+/* MODAL */
+
+.modal{
+
+display:none;
+position:fixed;
+z-index:100;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.85);
+padding:30px;
+overflow:auto;
+
+}
+
+
+.modal-conteudo{
 
 background:#151515;
-margin:30px;
+max-width:750px;
+margin:auto;
 padding:35px;
-border-radius:20px;
+border-radius:25px;
 
 }
 
 
-.detalhes h2{
+.fechar{
+
+float:right;
+font-size:35px;
+color:#32c85a;
+cursor:pointer;
+
+}
+
+
+.modal h2{
 
 color:#32c85a;
+margin-bottom:20px;
+
+}
+
+
+.modal p,
+.modal li{
+
+line-height:1.6;
 margin-bottom:15px;
+
+}
+
+
+footer{
+
+background:#0c0c0c;
+text-align:center;
+padding:35px;
+margin-top:50px;
 
 }
 
@@ -199,12 +308,14 @@ margin-bottom:15px;
 
 <header>
 
-<img class="logo" src="logo.png">
+<img src="logo.png" class="logo">
 
 
 <nav>
 
-<a href="#">Início</a>
+<a href="#">
+Início
+</a>
 
 <a href="#produtos">
 Produtos
@@ -214,11 +325,11 @@ Produtos
 Instagram
 </a>
 
+
 </nav>
 
 
 </header>
-
 <section class="hero">
 
 <div>
@@ -228,7 +339,7 @@ O universo das <span>E-Bikes</span>
 </h1>
 
 <p>
-Peças, acessórios e componentes para bicicletas elétricas.
+Peças e acessórios para bicicletas elétricas com foco em compatibilidade e qualidade.
 </p>
 
 <a class="botao" href="#produtos">
@@ -236,7 +347,7 @@ Ver produtos
 </a>
 
 <a class="botao" href="https://www.instagram.com/universo.ebike" target="_blank">
-Nosso Instagram
+Instagram
 </a>
 
 </div>
@@ -245,12 +356,52 @@ Nosso Instagram
 
 
 
-<h2 class="titulo" id="produtos">
+<section>
+
+<h2 class="titulo">
+Por que escolher a Universo E-Bike?
+</h2>
+
+
+<div class="beneficios">
+
+
+<div class="beneficio">
+⚡<br><br>
+Produtos para sistemas elétricos
+</div>
+
+
+<div class="beneficio">
+🔧<br><br>
+Peças e acessórios selecionados
+</div>
+
+
+<div class="beneficio">
+🔎<br><br>
+Informações de compatibilidade
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="produtos">
+
+
+<h2 class="titulo">
 Produtos em destaque
 </h2>
 
 
-<section class="produtos">
+<div class="produtos">
 
 
 
@@ -258,27 +409,30 @@ Produtos em destaque
 
 <img src="display-ananda.jpg">
 
+
 <h3>
 Display Ananda HMI D23
 </h3>
 
+
 <p>
-Painel LCD para bicicletas elétricas com sistema Ananda.
+Compatível com Caloi Explorer, Caloi SUV, Street Go e Oggi.
 </p>
 
-<p class="preco">
+
+<div class="preco">
 R$ 557,03
-</p>
+</div>
 
-<a class="botao" href="#display">
+
+<a class="botao" onclick="abrirDisplay()">
 Ver detalhes
 </a>
 
-<a class="botao" href="https://s.shopee.com.br/6AjH9d1fsY" target="_blank">
-Comprar
-</a>
 
 </div>
+
+
 
 
 
@@ -287,27 +441,30 @@ Comprar
 
 <img src="graxa-silicone.jpg">
 
+
 <h3>
 Graxa de Silicone Dielétrica Implastec
 </h3>
+
 
 <p>
 Proteção para conexões e componentes elétricos.
 </p>
 
-<p class="preco">
-R$ 20,95
-</p>
 
-<a class="botao" href="#graxa">
+<div class="preco">
+R$ 20,95
+</div>
+
+
+<a class="botao" onclick="abrirGraxa()">
 Ver detalhes
 </a>
 
-<a class="botao" href="https://s.shopee.com.br/3g1vjnBMee" target="_blank">
-Comprar
-</a>
 
 </div>
+
+
 
 
 
@@ -316,25 +473,29 @@ Comprar
 
 <img src="acelerador.jpg">
 
+
 <h3>
 Acelerador de Polegar 130X
 </h3>
 
+
 <p>
-Acessório universal para bicicletas elétricas.
+Acessório para bicicletas elétricas e scooters.
 </p>
 
-<p class="preco">
+
+<div class="preco">
 R$ 15,90
-</p>
+</div>
 
-<a class="botao" href="#acelerador">
+
+<a class="botao" onclick="abrirAcelerador()">
 Ver detalhes
 </a>
 
-<a class="botao" href="https://s.click.aliexpress.com/e/_c3wIvUoj" target="_blank">
-Comprar
-</a>
+
+</div>
+
 
 </div>
 
@@ -344,7 +505,20 @@ Comprar
 
 
 
-<section class="detalhes" id="display">
+
+<!-- MODAL DISPLAY -->
+
+
+<div id="display" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharDisplay()">
+×
+</span>
+
 
 <h2>
 Display Ananda HMI D23
@@ -352,51 +526,74 @@ Display Ananda HMI D23
 
 
 <p>
-O display HMI D23 da Ananda é ideal para reposição ou upgrade do painel da sua bicicleta elétrica. Compacto, resistente e de fácil utilização, permite controle dos níveis de assistência e exibe informações essenciais em tempo real durante o pedal.
+O display HMI D23 da Ananda é ideal para reposição ou upgrade do painel da sua bicicleta elétrica. Compacto, resistente e de fácil utilização, permite controle dos níveis de assistência e exibe informações essenciais durante o pedal.
 </p>
 
-<br>
 
 <p>
-Com tela LCD de 1,8", possui ótima visibilidade, botões integrados e comunicação com o sistema elétrico da bicicleta.
+Com tela LCD de 1,8", oferece ótima visibilidade mesmo em movimento, além de botões integrados para navegação entre funções.
 </p>
 
-<br>
 
 <h3>
 Compatibilidade:
 </h3>
 
-<p>
-✅ Caloi Explorer<br>
-✅ Caloi SUV<br>
-✅ Street Go<br>
-✅ Oggi BW 8.0<br>
-✅ Sistemas Ananda
-</p>
 
-<br>
+<ul>
+
+<li>Caloi Explorer</li>
+<li>Caloi SUV</li>
+<li>Street Go</li>
+<li>Oggi BW 8.0</li>
+<li>Sistemas Ananda</li>
+
+</ul>
+
 
 <h3>
 Destaques:
 </h3>
 
-<p>
-• Tela LCD 1,8"<br>
-• 5 níveis de assistência<br>
-• Comunicação UART / CAN<br>
-• Exibição de velocidade e quilometragem<br>
-• Resistência à água IPX6
-</p>
+
+<ul>
+
+<li>Tela LCD 1,8"</li>
+<li>5 níveis de assistência</li>
+<li>Comunicação UART / CAN</li>
+<li>Exibição de velocidade e quilometragem</li>
+<li>Resistência à água IPX6</li>
+
+</ul>
 
 
-</section>
+<a class="botao" href="https://s.shopee.com.br/6AjH9d1fsY" target="_blank">
+Comprar
+</a>
+
+
+</div>
+
+
+</div>
 
 
 
 
 
-<section class="detalhes" id="graxa">
+
+<!-- MODAL GRAXA -->
+
+
+<div id="graxa" class="modal">
+
+
+<div class="modal-conteudo">
+
+
+<span class="fechar" onclick="fecharGraxa()">
+×
+</span>
 
 
 <h2>
@@ -405,37 +602,63 @@ Graxa de Silicone Dielétrica Implastec
 
 
 <p>
-A Graxa de Silicone é utilizada como vedação dielétrica em montagens eletroeletrônicas devido à sua alta rigidez dielétrica, excelente resistência à formação de arcos e estabilidade térmica.
+Graxa de silicone obtida pela aditivação de polímeros de silicone, utilizada como vedação dielétrica em montagens eletroeletrônicas.
 </p>
 
 
-<br>
+<p>
+Possui excelente resistência à formação de arcos, estabilidade térmica e não é corrosiva.
+</p>
 
 
 <h3>
-Principais aplicações:
+Aplicações:
 </h3>
 
 
-<p>
-✅ Conexões elétricas<br>
-✅ Plugs e conectores<br>
-✅ Circuitos sujeitos a faiscamento<br>
-✅ Proteção de componentes elétricos
-</p>
+<ul>
+
+<li>Conectores elétricos</li>
+<li>Plugs</li>
+<li>Circuitos sujeitos a faiscamento</li>
+<li>Componentes eletrônicos</li>
+
+</ul>
 
 
-<br>
+<h3>
+Características:
+</h3>
 
 
-<p>
-Produto quimicamente inerte, não corrosivo e indicado para proteger componentes contra umidade e desgaste.
-</p>
+<ul>
+
+<li>Resistente a altas temperaturas</li>
+<li>Não tóxica</li>
+<li>Quimicamente inerte</li>
+<li>Excelente estabilidade térmica</li>
+
+</ul>
 
 
-</section>
+<a class="botao" href="https://s.shopee.com.br/3g1vjnBMee" target="_blank">
+Comprar
+</a>
 
-<section class="detalhes" id="acelerador">
+
+</div>
+
+
+</div>
+<!-- MODAL ACELERADOR -->
+
+<div id="acelerador" class="modal">
+
+<div class="modal-conteudo">
+
+<span class="fechar" onclick="fecharAcelerador()">
+×
+</span>
 
 
 <h2>
@@ -444,31 +667,13 @@ Acelerador de Polegar 130X
 
 
 <p>
-Acelerador de polegar universal para bicicletas elétricas e scooters elétricas. Possui design compacto, leve e fácil instalação, podendo ser montado no lado direito ou esquerdo do guidão.
+Acelerador de polegar universal para bicicletas elétricas e scooters elétricas. Possui design compacto, leve e fácil instalação.
 </p>
-
-
-<br>
-
-
-<h3>
-Características:
-</h3>
 
 
 <p>
-
-✅ Fabricado em plástico resistente<br>
-✅ Não envelhece facilmente<br>
-✅ Resistente ao desgaste e corrosão<br>
-✅ Instalação simples<br>
-✅ Conector à prova d'água<br>
-✅ Modelo universal 130X
-
+Fabricado em plástico de alta qualidade, oferece resistência ao desgaste e maior durabilidade para uso diário.
 </p>
-
-
-<br>
 
 
 <h3>
@@ -476,58 +681,59 @@ Compatibilidade:
 </h3>
 
 
+<ul>
+
+<li>Bicicletas elétricas</li>
+<li>Scooters elétricas</li>
+<li>Conversões elétricas</li>
+
+</ul>
+
+
+<h3>
+Observação:
+</h3>
+
+
 <p>
-
-✅ Bicicletas elétricas<br>
-✅ Scooters elétricas<br>
-✅ Sistemas de conversão elétrica<br>
-
-<br>
-
-⚠️ Não compatível com motores Bafang.
-
+Não é compatível com sistemas da marca Bafang.
+Consulte sempre o manual do fabricante antes da instalação.
 </p>
 
 
-</section>
+<h3>
+Características:
+</h3>
+
+
+<ul>
+
+<li>Modelo 130X</li>
+<li>Conector à prova d'água</li>
+<li>Pode ser instalado no lado direito ou esquerdo do guidão</li>
+<li>Material resistente</li>
+<li>Design compacto</li>
+
+</ul>
+
+
+<a class="botao" href="https://s.click.aliexpress.com/e/_c3wIvUoj" target="_blank">
+Comprar
+</a>
+
+
+</div>
+
+</div>
 
 
 
 
 
-<section class="detalhes">
+<footer>
 
 
 <h2>
-Por que escolher a Universo E-Bike?
-</h2>
-
-
-<p>
-
-⚡ Produtos selecionados para bicicletas elétricas.<br><br>
-
-🔧 Informações de compatibilidade para ajudar na escolha da peça correta.<br><br>
-
-🚀 Acessórios e componentes para melhorar sua experiência com sua E-Bike.
-
-</p>
-
-
-</section>
-
-
-
-
-
-<footer style="
-background:#0d0d0d;
-padding:40px;
-text-align:center;
-">
-
-
-<h2 style="color:#32c85a;">
 Universo E-Bike
 </h2>
 
@@ -541,13 +747,87 @@ Peças e acessórios para bicicletas elétricas.
 
 
 <a class="botao" href="https://www.instagram.com/universo.ebike" target="_blank">
-
 Instagram
-
 </a>
 
 
 </footer>
+
+
+
+
+
+<script>
+
+
+function abrirDisplay(){
+
+document.getElementById("display").style.display="block";
+
+}
+
+
+function fecharDisplay(){
+
+document.getElementById("display").style.display="none";
+
+}
+
+
+
+
+function abrirGraxa(){
+
+document.getElementById("graxa").style.display="block";
+
+}
+
+
+function fecharGraxa(){
+
+document.getElementById("graxa").style.display="none";
+
+}
+
+
+
+
+function abrirAcelerador(){
+
+document.getElementById("acelerador").style.display="block";
+
+}
+
+
+function fecharAcelerador(){
+
+document.getElementById("acelerador").style.display="none";
+
+}
+
+
+
+
+
+window.onclick=function(event){
+
+let modais=document.getElementsByClassName("modal");
+
+
+for(let i=0;i<modais.length;i++){
+
+if(event.target==modais[i]){
+
+modais[i].style.display="none";
+
+}
+
+}
+
+}
+
+
+</script>
 
 
 
