@@ -1,107 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Universo E-Bike | Peças e Acessórios para Bicicletas Elétricas</title>
+<title>Universo E-Bike | Peças para Bicicletas Elétricas</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#080808;
-    color:white;
+background:#050505;
+color:white;
 }
-
 
 header{
-    background:#101010;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+background:#0d0d0d;
+padding:20px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+position:sticky;
+top:0;
+z-index:10;
 }
-
 
 .logo{
-    width:100px;
+width:90px;
 }
-
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
+color:white;
+text-decoration:none;
+margin-left:20px;
 }
-
 
 nav a:hover{
-    color:#32c85a;
+color:#32c85a;
 }
-
 
 
 .hero{
 
-    min-height:600px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:40px;
+min-height:600px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
 
-    background:
-    linear-gradient(
-    rgba(0,0,0,.7),
-    rgba(0,0,0,.9)
-    ),
-    url("banner.jpg");
+background:
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.9)
+),
+url("banner.jpg");
 
-    background-size:cover;
-    background-position:center;
+background-size:cover;
+background-position:center;
 
 }
 
 
 .hero h1{
 
-    font-size:55px;
+font-size:55px;
 
 }
 
 
 .hero span{
 
-    color:#32c85a;
+color:#32c85a;
 
 }
 
 
 .hero p{
 
-    font-size:20px;
-    margin:20px;
+font-size:20px;
+margin:20px;
 
 }
 
 
-
 .botao{
 
-display:inline-block;
 background:#32c85a;
 color:black;
 padding:15px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
+display:inline-block;
 margin:8px;
 
 }
@@ -114,44 +113,32 @@ transform:scale(1.05);
 }
 
 
-
-section{
-
-padding:50px 30px;
-
-}
-
-
-
 .titulo{
 
 text-align:center;
-font-size:32px;
-margin-bottom:35px;
+font-size:35px;
+margin:50px 0 30px;
 
 }
-
-
 
 
 .produtos{
 
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
+flex-wrap:wrap;
 gap:30px;
+padding:30px;
 
 }
 
 
-
 .card{
 
-background:#151515;
-width:320px;
-border-radius:20px;
+background:#111;
+width:330px;
 padding:20px;
-text-align:center;
+border-radius:20px;
 
 }
 
@@ -159,7 +146,7 @@ text-align:center;
 .card img{
 
 width:100%;
-height:220px;
+height:230px;
 object-fit:contain;
 background:white;
 border-radius:15px;
@@ -170,81 +157,36 @@ border-radius:15px;
 .card h3{
 
 color:#32c85a;
-margin:15px;
+margin:15px 0;
 
 }
 
 
 .preco{
 
-font-size:25px;
+font-size:24px;
 font-weight:bold;
-margin:15px;
+margin:15px 0;
 
 }
 
 
+.detalhes{
 
-.beneficios{
-
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-
-}
-
-
-
-.beneficio{
-
-background:#111;
-padding:25px;
-border-radius:15px;
-width:250px;
-text-align:center;
+background:#151515;
+margin:30px;
+padding:35px;
+border-radius:20px;
 
 }
 
 
+.detalhes h2{
 
-.compatibilidade{
-
-text-align:center;
-
-}
-
-
-
-.compatibilidade span{
-
-display:inline-block;
-background:#32c85a;
-color:black;
-padding:12px 20px;
-border-radius:30px;
-margin:8px;
-font-weight:bold;
+color:#32c85a;
+margin-bottom:15px;
 
 }
-
-
-
-footer{
-
-background:#101010;
-padding:30px;
-text-align:center;
-
-}
-
-
-.instagram{
-
-margin-top:15px;
-
-}
-
 
 
 </style>
@@ -257,16 +199,18 @@ margin-top:15px;
 
 <header>
 
-
 <img class="logo" src="logo.png">
 
 
 <nav>
 
 <a href="#">Início</a>
-<a href="#produtos">Produtos</a>
-<a href="#compatibilidade">Compatibilidade</a>
-<a href="https://www.instagram.com/universo.ebike?igsh=MTN5bjhweGRtZ2UzNw%3D%3D&utm_source=qr" target="_blank">
+
+<a href="#produtos">
+Produtos
+</a>
+
+<a href="https://www.instagram.com/universo.ebike" target="_blank">
 Instagram
 </a>
 
@@ -275,89 +219,38 @@ Instagram
 
 </header>
 
-
-
 <section class="hero">
 
-
 <div>
-
 
 <h1>
 O universo das <span>E-Bikes</span>
 </h1>
 
-
 <p>
 Peças, acessórios e componentes para bicicletas elétricas.
 </p>
-
 
 <a class="botao" href="#produtos">
 Ver produtos
 </a>
 
-
-<a class="botao" href="https://www.instagram.com/universo.ebike?igsh=MTN5bjhweGRtZ2UzNw%3D%3D&utm_source=qr" target="_blank">
-Conheça nosso Instagram
+<a class="botao" href="https://www.instagram.com/universo.ebike" target="_blank">
+Nosso Instagram
 </a>
 
-
 </div>
-
 
 </section>
 
 
 
-
-<section>
-
-
-<h2 class="titulo">
-Por que escolher a Universo E-Bike?
-</h2>
-
-
-<div class="beneficios">
-
-
-<div class="beneficio">
-⚡<br>
-Produtos para sistemas elétricos
-</div>
-
-
-<div class="beneficio">
-🔧<br>
-Peças selecionadas
-</div>
-
-
-<div class="beneficio">
-🔎<br>
-Informações de compatibilidade
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="produtos">
-
-
-<h2 class="titulo">
+<h2 class="titulo" id="produtos">
 Produtos em destaque
 </h2>
 
 
-<div class="produtos">
+<section class="produtos">
 
 
 
@@ -369,21 +262,21 @@ Produtos em destaque
 Display Ananda HMI D23
 </h3>
 
-
 <p>
-Compatível com Caloi Explorer, Caloi SUV, Street Go e Oggi.
+Painel LCD para bicicletas elétricas com sistema Ananda.
 </p>
-
 
 <p class="preco">
 R$ 557,03
 </p>
 
-
-<a class="botao" href="https://s.shopee.com.br/6AjH9d1fsY">
-Comprar
+<a class="botao" href="#display">
+Ver detalhes
 </a>
 
+<a class="botao" href="https://s.shopee.com.br/6AjH9d1fsY" target="_blank">
+Comprar
+</a>
 
 </div>
 
@@ -395,27 +288,26 @@ Comprar
 <img src="graxa-silicone.jpg">
 
 <h3>
-Graxa de Silicone Dielétrica
+Graxa de Silicone Dielétrica Implastec
 </h3>
-
 
 <p>
 Proteção para conexões e componentes elétricos.
 </p>
 
-
 <p class="preco">
 R$ 20,95
 </p>
 
+<a class="botao" href="#graxa">
+Ver detalhes
+</a>
 
-<a class="botao" href="https://s.shopee.com.br/3g1vjnBMee">
+<a class="botao" href="https://s.shopee.com.br/3g1vjnBMee" target="_blank">
 Comprar
 </a>
 
-
 </div>
-
 
 
 
@@ -425,29 +317,25 @@ Comprar
 <img src="acelerador.jpg">
 
 <h3>
-Acelerador 130X
+Acelerador de Polegar 130X
 </h3>
 
-
 <p>
-Acessório universal para bicicletas elétricas e scooters.
+Acessório universal para bicicletas elétricas.
 </p>
-
 
 <p class="preco">
 R$ 15,90
 </p>
 
+<a class="botao" href="#acelerador">
+Ver detalhes
+</a>
 
-<a class="botao" href="https://s.click.aliexpress.com/e/_c3wIvUoj">
+<a class="botao" href="https://s.click.aliexpress.com/e/_c3wIvUoj" target="_blank">
 Comprar
 </a>
 
-
-</div>
-
-
-
 </div>
 
 
@@ -456,19 +344,50 @@ Comprar
 
 
 
+<section class="detalhes" id="display">
 
-<section id="compatibilidade" class="compatibilidade">
-
-
-<h2 class="titulo">
-Modelos compatíveis
+<h2>
+Display Ananda HMI D23
 </h2>
 
 
-<span>Caloi Explorer</span>
-<span>Caloi SUV</span>
-<span>Street Go</span>
-<span>Oggi</span>
+<p>
+O display HMI D23 da Ananda é ideal para reposição ou upgrade do painel da sua bicicleta elétrica. Compacto, resistente e de fácil utilização, permite controle dos níveis de assistência e exibe informações essenciais em tempo real durante o pedal.
+</p>
+
+<br>
+
+<p>
+Com tela LCD de 1,8", possui ótima visibilidade, botões integrados e comunicação com o sistema elétrico da bicicleta.
+</p>
+
+<br>
+
+<h3>
+Compatibilidade:
+</h3>
+
+<p>
+✅ Caloi Explorer<br>
+✅ Caloi SUV<br>
+✅ Street Go<br>
+✅ Oggi BW 8.0<br>
+✅ Sistemas Ananda
+</p>
+
+<br>
+
+<h3>
+Destaques:
+</h3>
+
+<p>
+• Tela LCD 1,8"<br>
+• 5 níveis de assistência<br>
+• Comunicação UART / CAN<br>
+• Exibição de velocidade e quilometragem<br>
+• Resistência à água IPX6
+</p>
 
 
 </section>
@@ -477,12 +396,140 @@ Modelos compatíveis
 
 
 
-<footer>
+<section class="detalhes" id="graxa">
+
+
+<h2>
+Graxa de Silicone Dielétrica Implastec
+</h2>
+
+
+<p>
+A Graxa de Silicone é utilizada como vedação dielétrica em montagens eletroeletrônicas devido à sua alta rigidez dielétrica, excelente resistência à formação de arcos e estabilidade térmica.
+</p>
+
+
+<br>
 
 
 <h3>
-Universo E-Bike
+Principais aplicações:
 </h3>
+
+
+<p>
+✅ Conexões elétricas<br>
+✅ Plugs e conectores<br>
+✅ Circuitos sujeitos a faiscamento<br>
+✅ Proteção de componentes elétricos
+</p>
+
+
+<br>
+
+
+<p>
+Produto quimicamente inerte, não corrosivo e indicado para proteger componentes contra umidade e desgaste.
+</p>
+
+
+</section>
+
+<section class="detalhes" id="acelerador">
+
+
+<h2>
+Acelerador de Polegar 130X
+</h2>
+
+
+<p>
+Acelerador de polegar universal para bicicletas elétricas e scooters elétricas. Possui design compacto, leve e fácil instalação, podendo ser montado no lado direito ou esquerdo do guidão.
+</p>
+
+
+<br>
+
+
+<h3>
+Características:
+</h3>
+
+
+<p>
+
+✅ Fabricado em plástico resistente<br>
+✅ Não envelhece facilmente<br>
+✅ Resistente ao desgaste e corrosão<br>
+✅ Instalação simples<br>
+✅ Conector à prova d'água<br>
+✅ Modelo universal 130X
+
+</p>
+
+
+<br>
+
+
+<h3>
+Compatibilidade:
+</h3>
+
+
+<p>
+
+✅ Bicicletas elétricas<br>
+✅ Scooters elétricas<br>
+✅ Sistemas de conversão elétrica<br>
+
+<br>
+
+⚠️ Não compatível com motores Bafang.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="detalhes">
+
+
+<h2>
+Por que escolher a Universo E-Bike?
+</h2>
+
+
+<p>
+
+⚡ Produtos selecionados para bicicletas elétricas.<br><br>
+
+🔧 Informações de compatibilidade para ajudar na escolha da peça correta.<br><br>
+
+🚀 Acessórios e componentes para melhorar sua experiência com sua E-Bike.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<footer style="
+background:#0d0d0d;
+padding:40px;
+text-align:center;
+">
+
+
+<h2 style="color:#32c85a;">
+Universo E-Bike
+</h2>
 
 
 <p>
@@ -490,17 +537,20 @@ Peças e acessórios para bicicletas elétricas.
 </p>
 
 
-<div class="instagram">
+<br>
 
-<a class="botao" href="https://www.instagram.com/universo.ebike?igsh=MTN5bjhweGRtZ2UzNw%3D%3D&utm_source=qr" target="_blank">
+
+<a class="botao" href="https://www.instagram.com/universo.ebike" target="_blank">
+
 Instagram
-</a>
 
-</div>
+</a>
 
 
 </footer>
 
 
+
 </body>
+
 </html>
